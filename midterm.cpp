@@ -136,7 +136,7 @@ int main() {
     cout << "\nTotal Before Tax: $" << subTotal << endl;
 
 
-    // Declaring and initializing a varialbe to represent tax
+    // Declaring and initializing a variable to represent tax
     double taxAmount = 0;
 
     // If the customer is a staff member, calculate tax amount.
