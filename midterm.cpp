@@ -1,6 +1,17 @@
 /*
- * Names: Ryan Tran
+ * Names: Ryan Tran, Eliab Tedros, Yong Doo Kim, Trung Tran, Khin Yadanar Kyaw
  * Team Name: Boolean Bunch
+ *
+ * Description: This program is a menu-based system where a user has the choice
+ *              to select a multitude of different burgers and select a valid
+ *              quantity of that burger that they would like to add to their
+ *              burger. They then select whether they are a student or a
+ *              staff member. The program performs input validation on all
+ *              inputted values to ensure that they are reasonable and valid.
+ *              The program then writes and displays values such as the
+ *              quantities of each burger that is ordered, the cost per item,
+ *              the total before tax, the tax amount, and then the final total
+ *              to the screen and a text file.
  *
  */
 
