@@ -110,11 +110,11 @@ int main() {
 
     // Displaying the cost of each burger individually
     cout << "\nCost Per Item: " << endl;
-    cout << "De Anza Burger: $5.25 x " << quantity1 << " = " << costQuantity1 << endl;
-    cout << "Bacon Cheese Burger: $5.75 x " << quantity2 << " = " << costQuantity2 << endl;
-    cout << "Mushroom Swiss Burger: $5.95 x " << quantity3 << " = " << costQuantity3 << endl;
-    cout << "Western Burger: $5.95 x " << quantity4 << " = " << costQuantity4 << endl;
-    cout << "Don Cali Burger: $5.95 x " << quantity5 << " = " << costQuantity5 << endl;
+    cout << "De Anza Burger: $5.25 x " << quantity1 << " = $" << costQuantity1 << endl;
+    cout << "Bacon Cheese Burger: $5.75 x " << quantity2 << " = $" << costQuantity2 << endl;
+    cout << "Mushroom Swiss Burger: $5.95 x " << quantity3 << " = $" << costQuantity3 << endl;
+    cout << "Western Burger: $5.95 x " << quantity4 << " = $" << costQuantity4 << endl;
+    cout << "Don Cali Burger: $5.95 x " << quantity5 << " = $" << costQuantity5 << endl;
 
     // Displaying the subtotal of each burger (cost of all items before tax)
     cout << "\nTotal Before Tax: " << endl;
@@ -126,6 +126,9 @@ int main() {
 
     // Calculation for the subTotal (cost of all burgers ordered)
     double subTotal = costQuantity1 + costQuantity2 + costQuantity3 + costQuantity4 + costQuantity5;
+
+    // Displaying the sub total
+    cout << "\nSub Total: $" << subTotal << endl;
 
     // Declaring and initializing a varialbe to represent tax
     double taxAmount = 0;
@@ -139,7 +142,7 @@ int main() {
     cout << "\nTax Amount: $" << taxAmount << endl;
 
     // Display the final total
-    cout << "\nFinal Total: $" << (subTotal + taxAmount) << endl;
+    cout << "\nFinal Bill: $" << (subTotal + taxAmount) << endl;
 
     // Make an ofstream object and open a new output.txt file
     ofstream outputFile;
@@ -147,7 +150,31 @@ int main() {
 
     // If file successfully opened, write the monetary value of the final bill
     if(outputFile) {
-        outputFile << "Final Bill: $" << (subTotal + taxAmount) << endl;
+
+        outputFile << fixed << showpoint << setprecision(2);
+        // Writing the cost per item
+        outputFile << "\nCost Per Item: " << endl;
+        outputFile << "De Anza Burger: $5.25 x " << quantity1 << " = $" << costQuantity1 << endl;
+        outputFile << "Bacon Cheese Burger: $5.75 x " << quantity2 << " = $" << costQuantity2 << endl;
+        outputFile << "Mushroom Swiss Burger: $5.95 x " << quantity3 << " = $" << costQuantity3 << endl;
+        outputFile << "Western Burger: $5.95 x " << quantity4 << " = $" << costQuantity4 << endl;
+        outputFile << "Don Cali Burger: $5.95 x " << quantity5 << " = $" << costQuantity5 << endl;
+
+        // Writing the sub total
+        outputFile << "\nTotal Before Tax: " << endl;
+        outputFile << "De Anza Burger: $" << costQuantity1 << endl;
+        outputFile << "Bacon Cheese Burger: $" << costQuantity2 << endl;
+        outputFile << "Mushroom Swiss Burger: $" << costQuantity3 << endl;
+        outputFile << "Western Burger Burger: $" << costQuantity4 << endl;
+        outputFile << "Don Cali Burger: $" << costQuantity5 << endl;
+
+        outputFile << "\nSub Total: $" << subTotal << endl;
+
+        // Displaying the tax amount
+        outputFile << "\nTax Amount: $" << taxAmount << endl;
+
+        // Displaying the final bill
+        outputFile << "\nFinal Bill: $" << (subTotal + taxAmount) << endl;
         outputFile.close();
     }
 
