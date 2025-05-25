@@ -272,4 +272,72 @@ int main() {
 
 
     Run 2:
+    1. De Anza Burger - $5.25
+    2. Bacon Cheese Burger - $5.75
+    3. Mushroom Swiss Burger - $5.95
+    4. Western Burger - $5.95
+    5. Don Cali Burger - $5.95
+    6. End Order
+
+    Please choose a burger option, or select 6 to end order: 7
+    Please choose a valid option (1-6): 0
+    Please choose a valid option (1-6): 1
+
+    How many burgers would you like? : -3
+    Please enter a non-negative number of burgers to order: 1
+
+    Please choose a burger option, or select 6 to end order: 1
+
+    How many burgers would you like? : 3
+
+    Please choose a burger option, or select 6 to end order: 2
+
+    How many burgers would you like? : -1
+    Please enter a non-negative number of burgers to order: 0
+
+    Please choose a burger option, or select 6 to end order: 0
+    Please choose a valid option (1-6): 3
+
+    How many burgers would you like? : -10
+    Please enter a non-negative number of burgers to order: 20
+
+    Please choose a burger option, or select 6 to end order: 4
+
+    How many burgers would you like? : 0
+
+    Please choose a burger option, or select 6 to end order: 4
+
+    How many burgers would you like? : 2
+
+    Please choose a burger option, or select 6 to end order: 5
+
+    How many burgers would you like? : -1
+    Please enter a non-negative number of burgers to order: 3
+
+    Please choose a burger option, or select 6 to end order: 6
+
+    Are you a student or staff?
+    1. Student
+    2. Staff
+    1
+
+    Ordered Items and Quantities:
+    De Anza Burger Quantity Ordered: 4
+    Bacon Cheese Burger Quantity Ordered: 0
+    Mushroom Swiss Burger Quantity Ordered: 20
+    Western Burger Quantity Ordered: 2
+    Don Cali Burger Quantity Ordered: 3
+
+    Cost Per Item:
+    De Anza Burger: $5.25 x 4 = $21.00
+    Bacon Cheese Burger: $5.75 x 0 = $0.00
+    Mushroom Swiss Burger: $5.95 x 20 = $119.00
+    Western Burger: $5.95 x 2 = $11.90
+    Don Cali Burger: $5.95 x 3 = $17.85
+
+    Total Before Tax: $169.75
+
+    Tax Amount: $0.00
+
+    Final Total: $169.75
 */
