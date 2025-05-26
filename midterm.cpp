@@ -124,6 +124,8 @@ int main() {
     double costQuantity5 = 5.95 * quantity5;
 
     // Output formatting, in fixed point notation, always show point and two decimal points
+    // The reason why I didn't put the formatting higher up is because it
+    // wouldn't make sense to have a decimal number of burgers ordered.
     cout << fixed << showpoint << setprecision(2);
 
     // Displaying the cost of each burger individually
