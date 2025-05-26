@@ -13,6 +13,12 @@
  *              the total before tax, the tax amount, and then the final total
  *              to the screen and a text file.
  *
+ * Note: For input validation, the implementation made sure that the range of
+ *       inputted values of correct. While we wanted to implement checks to
+ *       prevent different invalid types from being entered, we haven't learned some
+ *       of those concepts yet. However, we could use istringstream
+ *       as well as .fail() to ensure input is correct, however, we haven't
+ *       covered that, so we stuck with our normal implementation.
  */
 
 #include <iostream>
@@ -65,7 +71,7 @@ int main() {
                 cin >> userQuantity;
             }
 
-            // Switch cases for the burger selection, adds inputted quantity to selected burger
+            // Switch cases user selection, adds inputted quantity to selected burger
             switch(burgerSelection) {
                 case 1:
                     quantity1 += userQuantity;
